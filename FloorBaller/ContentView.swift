@@ -97,6 +97,7 @@ struct PushedView: View {
                 game_schedule.append(
                     Game(home: game.0, away: game.1)
                 )
+                previous_teams = [game.0, game.1]
                 games = games.filter{$0 != game}
                 games_to_play -= 1
             }
