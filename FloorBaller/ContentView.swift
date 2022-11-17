@@ -9,28 +9,45 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var selection = 2
+    @State private var path = NavigationPath()
+    @State var selection = 4
+    @State var length = 5
     
     var body: some View {
-        NavigationView {
-            VStack {
-                Text("Välj antal Lag")
-                    .font(.largeTitle)
-                    .fontWeight(.heavy)
-                Picker(selection: $selection, label: Text("")) {
-                    ForEach(2..<11) {
-                        i in Text("\(i) Lag").tag(i)
+        
+        NavigationView() {
+            Form {
+                Section(header: Text("Välj antal lag")) {
+                    Picker(selection: $selection, label: Text("")) {
+                        ForEach(2..<11) {
+                            i in Text("\(i) Lag").tag(i)
+                        }
+                    }
+                    .pickerStyle(WheelPickerStyle())
+                }
+                
+                Picker(selection: $length, label: Text("Längd på matcher (min.)")) {
+                    ForEach(1..<60) {
+                        i in Text("\(i) min.").tag(i)
                     }
                 }
-                .pickerStyle(WheelPickerStyle())
-                .padding()
-                //Text("\(selection) Lag")
+                
+                Section(footer: Text("Lagnamn anges i nästa steg, annars 1, 2, 3 ...")) {
+                    Toggle(isOn: .constant(false),
+                           label: {
+                        Text("Egna lagnamn")
+                    })
+                }
+                
+
                 NavigationLink(destination: PushedView(teamCount: self.$selection)){
-                    Text("SPELA")
+                    Text("Gå vidare")
                 }
                 .buttonStyle(.borderedProminent)
                 .fontWeight(.semibold)
+                .foregroundColor(.blue)
             }
+            .navigationTitle("Inställningar")
         }
     }
 }
@@ -40,7 +57,6 @@ struct PushedView: View {
     @Binding var teamCount: Int
     
     var body: some View {
-        
         Text("Spelschema:")
             .font(.largeTitle)
             .fontWeight(.heavy)
@@ -53,6 +69,7 @@ struct PushedView: View {
                 .fontWeight(.heavy)
         }
     }
+
     
     struct Game: Hashable {
         let home: Int
