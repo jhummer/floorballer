@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		85504BB529916CD700C288E4 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85504BB429916CD700C288E4 /* SettingsView.swift */; };
+		85504BB729916CF500C288E4 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85504BB629916CF500C288E4 /* TimerView.swift */; };
+		85504BB929916D0A00C288E4 /* GameListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85504BB829916D0A00C288E4 /* GameListView.swift */; };
+		85504BBB29916D3400C288E4 /* GameRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85504BBA29916D3400C288E4 /* GameRowView.swift */; };
+		85504BBE2994207B00C288E4 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85504BBD2994207B00C288E4 /* Game.swift */; };
 		85992B092925376D00BAE0B9 /* FloorBallerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85992B082925376D00BAE0B9 /* FloorBallerApp.swift */; };
 		85992B0B2925376D00BAE0B9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85992B0A2925376D00BAE0B9 /* ContentView.swift */; };
 		85992B0D2925377000BAE0B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85992B0C2925377000BAE0B9 /* Assets.xcassets */; };
@@ -15,6 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		85504BB429916CD700C288E4 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		85504BB629916CF500C288E4 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		85504BB829916D0A00C288E4 /* GameListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListView.swift; sourceTree = "<group>"; };
+		85504BBA29916D3400C288E4 /* GameRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRowView.swift; sourceTree = "<group>"; };
+		85504BBD2994207B00C288E4 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		85992B052925376D00BAE0B9 /* FloorBaller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FloorBaller.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85992B082925376D00BAE0B9 /* FloorBallerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloorBallerApp.swift; sourceTree = "<group>"; };
 		85992B0A2925376D00BAE0B9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -35,6 +45,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		85504BB329916CBF00C288E4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				85504BB429916CD700C288E4 /* SettingsView.swift */,
+				85504BB629916CF500C288E4 /* TimerView.swift */,
+				85504BB829916D0A00C288E4 /* GameListView.swift */,
+				85504BBA29916D3400C288E4 /* GameRowView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		85504BBC2994206500C288E4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				85504BBD2994207B00C288E4 /* Game.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		85992AFC2925376D00BAE0B9 = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +83,8 @@
 		85992B072925376D00BAE0B9 /* FloorBaller */ = {
 			isa = PBXGroup;
 			children = (
+				85504BBC2994206500C288E4 /* Model */,
+				85504BB329916CBF00C288E4 /* Views */,
 				85992B082925376D00BAE0B9 /* FloorBallerApp.swift */,
 				85992B0A2925376D00BAE0B9 /* ContentView.swift */,
 				85992B0C2925377000BAE0B9 /* Assets.xcassets */,
@@ -142,9 +173,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85504BB729916CF500C288E4 /* TimerView.swift in Sources */,
+				85504BBB29916D3400C288E4 /* GameRowView.swift in Sources */,
 				85992B0B2925376D00BAE0B9 /* ContentView.swift in Sources */,
+				85504BB929916D0A00C288E4 /* GameListView.swift in Sources */,
+				85504BB529916CD700C288E4 /* SettingsView.swift in Sources */,
 				85992B092925376D00BAE0B9 /* FloorBallerApp.swift in Sources */,
 				85992B182925663800BAE0B9 /* SplashScreenView.swift in Sources */,
+				85504BBE2994207B00C288E4 /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
