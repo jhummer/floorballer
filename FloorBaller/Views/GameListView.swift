@@ -14,18 +14,21 @@ struct GameListView: View {
     
     var body: some View {
         let gameSchedule = generateGameSchedule(teams: teamCount)
-        
-        VStack {
-            Spacer()
-            ForEach(gameSchedule, id: \.self) { game in
-                GameRowView(game: game, hasPlayed: false)
+        NavigationView() {
+            VStack {
+                Spacer()
+                ForEach(gameSchedule, id: \.self) { game in
+                    GameRowView(game: game, hasPlayed: false)
+                }
+                Spacer()
+                Divider()
+                if showTimer {
+                    TimerView(countdownTime: length)
+                }
             }
-            Spacer()
-            Divider()
-            if showTimer {
-                TimerView(countdownTime: length)
-            }
+            .navigationTitle("Matcher")
         }
+        .navigationBarHidden(true)
     }
 }
 

@@ -28,17 +28,17 @@ struct SettingsView: View {
                     .pickerStyle(WheelPickerStyle())
                 }
                 
-                Picker(selection: $length, label: Text("Matchlängd")) {
-                    ForEach(1..<60) {
-                        i in Text("\(i) min.").tag(i)
-                    }
-                }
                 
                 Section {
                     Toggle(isOn: $showTimer,
                            label: {
                         Text("Visa timer")
                     })
+                    Picker(selection: $length, label: Text("Matchlängd")) {
+                        ForEach(1..<60) {
+                            i in Text("\(i) min.").tag(i)
+                        }
+                    }
                     /*
                     Toggle(isOn: $showResults,
                            label: {
