@@ -18,8 +18,11 @@ The timer view is pretty much a straight copy-paste with minor modifications fro
 https://medium.com/geekculture/build-a-stopwatch-in-just-3-steps-using-swiftui-778c327d214b
 
 
-![Splash](https://github.com/jhummer/jhummer.github.io/blob/main/images/floorballer-splash.png | width=282)
 
-![Settings](https://github.com/jhummer/jhummer.github.io/blob/main/images/floorballer-settings.png | width=282)
+<p float="left">
+<img src="https://github.com/jhummer/jhummer.github.io/blob/main/images/floorballer-splash.png" width="282">
 
-![Game Schedule](https://github.com/jhummer/jhummer.github.io/blob/main/images/floorballer-gamelist.png | width=282)
+<img src="https://github.com/jhummer/jhummer.github.io/blob/main/images/floorballer-settings.png" width="282">
+
+<img src="https://github.com/jhummer/jhummer.github.io/blob/main/images/floorballer-gamelist.png" width="282">
+</p>
