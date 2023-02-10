@@ -25,6 +25,7 @@
 		85504BB829916D0A00C288E4 /* GameListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListView.swift; sourceTree = "<group>"; };
 		85504BBA29916D3400C288E4 /* GameRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRowView.swift; sourceTree = "<group>"; };
 		85504BBD2994207B00C288E4 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		85504BBF2996651A00C288E4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		85992B052925376D00BAE0B9 /* FloorBaller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FloorBaller.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85992B082925376D00BAE0B9 /* FloorBallerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloorBallerApp.swift; sourceTree = "<group>"; };
 		85992B0A2925376D00BAE0B9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -67,6 +68,7 @@
 		85992AFC2925376D00BAE0B9 = {
 			isa = PBXGroup;
 			children = (
+				85504BBF2996651A00C288E4 /* README.md */,
 				85992B072925376D00BAE0B9 /* FloorBaller */,
 				85992B062925376D00BAE0B9 /* Products */,
 			);
