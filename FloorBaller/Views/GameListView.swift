@@ -23,7 +23,7 @@ struct GameListView: View {
                 Spacer()
                 Divider()
                 if showTimer {
-                    TimerView(countdownTime: length)
+                    TimerView(initialTime: length, countdownTime: length)
                 }
             }
             .navigationTitle("Matcher")

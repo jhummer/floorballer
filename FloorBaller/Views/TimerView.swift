@@ -10,8 +10,8 @@ import AVFoundation
 
 struct TimerView: View {
     // TODO: auto-toggle finished game when timer finished
-    
-    @State var countdownTime = 60 * 5 /// default to 300 seconds (5 mins)
+    @State var initialTime: Int = 60 * 5
+    @State var countdownTime: Int = 60 * 5
     @State private var isRunning = false
 
     var minutes: Int {
@@ -39,7 +39,6 @@ struct TimerView: View {
                 Button(action: {
                     if isRunning{
                         timer?.invalidate()
-                        playSound()
                     } else {
                         timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { _ in
                             countdownTime -= 1
@@ -59,7 +58,7 @@ struct TimerView: View {
                 }
 
                 Button(action: {
-                    countdownTime = 0
+                    countdownTime = initialTime
                 }) {
                     ZStack {
                         RoundedRectangle(cornerRadius: 15.0)
